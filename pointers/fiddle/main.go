@@ -65,4 +65,20 @@ func main() {
 
 	fmt.Println("")
 	fmt.Println("notes: pointers must be assigned when initialized, can't be reassigned as a pointer later when was previously not a pointer")
+
+	fmt.Println("")
+	fmt.Println("=================================================")
+	fmt.Println("* playing with the values of the address being pointed to *")
+	fmt.Println("")
+
+	fmt.Println("     The setup: using b to point to a")
+	a = 2
+	var c *int = &a
+	fmt.Print("a's original value: ")
+	fmt.Println(a)
+	fmt.Print("a's memory address: ")
+	fmt.Println(&a)
+	fmt.Print("pointer c's value ")
+	fmt.Println(*c)
+	fmt.Println("")
 }
