@@ -58,4 +58,9 @@ func main() {
 	fmt.Println(&b)
 	fmt.Println("> Interesting, it seems that b's value is just a's address")
 	fmt.Println("")
+
+	fmt.Println("     lets try doing something like printing 'pointer b' vs just 'b' ('*b' vs 'b')")
+	fmt.Print("b's value (with pointer): ")
+	fmt.Println(*b)
+
 }
