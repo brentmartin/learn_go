@@ -5,6 +5,8 @@ import (
 )
 
 var a int
+var b int
+
 func main() {
 	a = 1
 	fmt.Println("* Memory address does not change when reassigned *")
@@ -23,4 +25,5 @@ func main() {
 	fmt.Print("post-reassigned value: ")
 	fmt.Println(a)
 
+	b = 10
 }
