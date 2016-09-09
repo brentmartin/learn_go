@@ -45,4 +45,17 @@ func main() {
 	fmt.Println("     Now lets point b to a ")
 	fmt.Println("> Error: '*b = &a' won't work, we'll have to recreate it from scratch and point it to a with 'var b *int = &a'")
 	fmt.Println("")
+
+	var b *int = &a
+	fmt.Println("     after recreating b and pointing it to a in the process:")
+	fmt.Print("a's original value: ")
+	fmt.Println(a)
+	fmt.Print("b's recreated value: ")
+	fmt.Println(b)
+	fmt.Print("a's original memory address: ")
+	fmt.Println(&a)
+	fmt.Print("b's recreated memory address: ")
+	fmt.Println(&b)
+	fmt.Println("> Interesting, it seems that b's value is just a's address")
+	fmt.Println("")
 }
