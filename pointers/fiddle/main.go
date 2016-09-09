@@ -63,4 +63,6 @@ func main() {
 	fmt.Print("b's value (with pointer): ")
 	fmt.Println(*b)
 
+	fmt.Println("")
+	fmt.Println("notes: pointers must be assigned when initialized, can't be reassigned as a pointer later when was previously not a pointer")
 }
