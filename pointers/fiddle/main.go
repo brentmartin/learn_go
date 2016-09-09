@@ -25,5 +25,20 @@ func main() {
 	fmt.Print("post-reassigned value: ")
 	fmt.Println(a)
 
+	fmt.Println("=================================================")
+	fmt.Println("* Introducing pointers - var shares memory address that it is pointed too *")
+	fmt.Println("")
+
+	fmt.Println("     The setup:")
+	a = 1
 	b = 10
+	fmt.Print("a's original value: ")
+	fmt.Println(a)
+	fmt.Print("b's original value: ")
+	fmt.Println(b)
+	fmt.Print("a's memory address: ")
+	fmt.Println(&a)
+	fmt.Print("b's memory address: ")
+	fmt.Println(&b)
+	fmt.Println("")
 }
