@@ -41,4 +41,8 @@ func main() {
 	fmt.Print("b's memory address: ")
 	fmt.Println(&b)
 	fmt.Println("")
+
+	fmt.Println("     Now lets point b to a ")
+	fmt.Println("> Error: '*b = &a' won't work, we'll have to recreate it from scratch and point it to a with 'var b *int = &a'")
+	fmt.Println("")
 }
